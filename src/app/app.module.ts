@@ -18,7 +18,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     AppRoutingModule,
     PagesModule,
     ComponentsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirebaseApp(() => initializeApp(environment.firebase)), // se utilizan para inicializar Firebase y proveer un servicio de autenticación en Angular
     provideAuth(() => getAuth())
   ],
   providers: [],
